@@ -1,0 +1,21 @@
+{
+  "name": "jiord/espacemembre",
+  "description": "Projet php",
+  "type": "library",
+  "require": {
+    "phpmailer/phpmailer": "^6.8",
+    "ext-pdo": "*",
+    "ext-mbstring": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Jiord\\Espacemembre\\": "src/",
+      "PHPMailer\\PHPMailer\\": "vendor/phpmailer/phpmailer/src/PHPMailer.php/PHPMAILER"
+    }
+  },
+  "authors": [
+    {
+      "name": "jiordi viera"
+    }
+  ]
+}
