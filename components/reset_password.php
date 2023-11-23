@@ -15,7 +15,7 @@ if ($_GET) {
     if (!empty($email) && !empty($token)) {
         require_once '../include/start_bdd.php';
         $req = $bdd->prepare('select * from membres.table_membres where email=:email and token=:token');
-        $req->bindValue(':email', $email);
+        $req->bindValue(param: ':email', value: $email);
         $req->bindValue(':token', $token);
 
         $req->execute();
